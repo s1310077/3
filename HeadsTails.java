@@ -21,5 +21,11 @@ public class HeadsTails{
             }
         }
         System.out.println("Heads:" + heads +", Tais:"+tails);
+
+        if (heads > tails) {
+            System.out.println("You won!");
+        } else {
+            System.out.println("You lost!");
+        }
     }
 }
