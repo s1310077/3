@@ -1,10 +1,16 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class HeadsTails{
     private enum Coin{Heads,Tails}
 
     public static void main(String[] args){
         Random random=new Random();
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Who are you? \n> ");
+        String name = scanner.nextLine();
+        System.out.println("Hello, " + name + "!");
 
         System.out.println("Tossing a coin...");
         int heads=0;
